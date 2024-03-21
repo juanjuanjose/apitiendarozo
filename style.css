@@ -1,0 +1,156 @@
+:root {
+    --color-principal: #1e8ad9;
+    --color-secundario: #46a6ea;
+    --color-amarillo:  #ffcc00;
+    --color-blanco: #ffffff
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--color-principal);
+
+}
+
+h1 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--color-blanco);
+}
+
+h2 {
+    font-size: 14px;
+    margin-bottom: 14px;
+    color: var(--color-blanco);
+}
+
+header {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedor-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+.fa-solid {
+    position: absolute;
+    left: 20%;
+    color: #1e8ad9;
+}
+
+.input-buscador {
+    padding: 8px 0px 8px 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.fas-users {
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid white;
+    align-items: center;
+
+}
+
+.tiendaimagen > img {
+    height: 40px;
+}
+
+.tiendaimagen > h1 {
+    color: var(--color-amarillo);
+    font-size: 60px;
+}
+
+.users {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid var(--color-blanco);
+    color: white;
+    justify-content: center;
+    display: flex;
+    object-fit:contain;
+}
+
+.usuario > img {
+    height: 26px;
+ 
+}
+
+.shopping-cart {
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    border: 2px solid var(--color-blanco);
+    background-color: var(--color-blanco);
+    color: var(--color-principal);
+    object-fit: contain;
+}
+
+.carrito > img {
+    height: 26px;
+}
+
+.linea {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+.linea::before,
+.linea::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 47%;
+    height: 1px;
+}
+
+.linea::before {
+    left: 0;
+    transform: translateY(-50%);
+   
+
+}
+
+.linea::after {
+    right: 0;
+    transform: translateY(-50%);
+
+}
