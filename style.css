@@ -1,8 +1,8 @@
 :root {
     --color-principal: #1e8ad9;
     --color-secundario: #46a6ea;
-    --color-amarillo:  #ffcc00;
-    --color-blanco: #ffffff
+    --color-Terciario:  #ffcc00;
+    --color-adcional : #ffffff
 }
 
 * {
@@ -23,18 +23,18 @@ body {
 h1 {
     font-size: 14px;
     margin-bottom: 8px;
-    color: var(--color-blanco);
+    color: var(--color-adcional);
 }
 
 h2 {
     font-size: 14px;
     margin-bottom: 14px;
-    color: var(--color-blanco);
+    color: var(--color-adcional);
 }
 
 header {
     background-color: var(--color-principal);
-    color: white;
+    color: var(--color-adcional);
     padding: 20px;
     text-align: center;
 }
@@ -53,7 +53,7 @@ header {
 }
 
 .icons {
-    color: white;
+    color: var(--color-adcional);
     font-size: 1.8rem;
     cursor: pointer;
     display: none;
@@ -62,7 +62,7 @@ header {
 .fa-solid {
     position: absolute;
     left: 20%;
-    color: #1e8ad9;
+    color: var(--color-principal);
 }
 
 .input-buscador {
@@ -74,7 +74,7 @@ header {
 .fas-users {
     padding: 5px;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 1px solid var(--color-adcional);
     align-items: center;
 
 }
@@ -84,7 +84,7 @@ header {
 }
 
 .tiendaimagen > h1 {
-    color: var(--color-amarillo);
+    color: var(--color-Terciario);
     font-size: 60px;
 }
 
@@ -93,8 +93,8 @@ header {
     height: 25px;
     padding: 5px;
     border-radius: 50%;
-    border: 2px solid var(--color-blanco);
-    color: white;
+    border: 2px solid var(--color-adcional);
+    color: var(--color-adcional);
     justify-content: center;
     display: flex;
     object-fit:contain;
@@ -112,8 +112,8 @@ header {
     place-items: center;
     padding: 5px;
     border-radius: 50%;
-    border: 2px solid var(--color-blanco);
-    background-color: var(--color-blanco);
+    border: 2px solid var(--color-adcional);
+    background-color: var(--color-adcional);
     color: var(--color-principal);
     object-fit: contain;
 }
@@ -152,5 +152,141 @@ header {
 .linea::after {
     right: 0;
     transform: translateY(-50%);
+
+}
+
+
+
+.caja {
+    width: 5px;
+    height: 5px;
+    border: 2px groove;
+}
+
+#categorias{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+#categorias a {
+    color: var(--color-adcional);
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+
+#categorias a:hover {
+    background-color: var(--color-secundario);
+}
+#products-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 2fr)); 
+    gap: 5px;
+    padding: 20px;
+}
+
+.product {
+    border: 3px solid var(--color-Terciario); 
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; 
+}
+
+.product img {
+    width: 100%; 
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    position: absolute; 
+    bottom: 5px; 
+    left: 0; 
+    right: 0; 
+    text-align: center; 
+    margin: 10px; 
+    font-size: 14px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (min-width: 350px){
+    header{
+        padding: 10px;
+    }
+     .icons{
+        display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+   
+    .linea::before,
+    .linea::after {
+        width: 45%;
+    }
+
+}
+
+@media (min-width: 580px){
+    #categorias{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    #categorias a{
+        font-size: 14px;
+    }
+    .linea::before,
+    .linea::after {
+        width: 41%;
+    }
+
+
+}
+@media (min-width: 768px) {
+    .contenedor-div{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        
+    }
+    .icons{
+        display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .linea::before,
+    .linea::after {
+        width: 43%;
+    }
+    
+}
+@media (min-width: 992px){
+
+}
+@media (min-width: 1200px){
 
 }
