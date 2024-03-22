@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const categoriesNav = document.getElementById('categorias');
+    const categoriesNav = document.getElementById('categories-nav');
     const productsSection = document.getElementById('products-section');
-
-
     fetch('https://fakestoreapi.com/products/categories')
         .then(response => response.json())
         .then(categories => {
@@ -16,20 +14,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
                 categoriesNav.appendChild(link);
             });
-
             showProductsByCategory('all');
-
         })
         .catch(error => console.error('Error fetching categories:', error));
-
 function showProductsByCategory(category) {
     productsSection.innerHTML = '';
-
     let apiUrl = 'https://fakestoreapi.com/products';
     if (category !== 'all') {
         apiUrl += `/category/${category}`;
     }
-
     fetch(apiUrl)
         .then(response => response.json())
         .then(products => {
@@ -40,11 +33,12 @@ function showProductsByCategory(category) {
                         <img src="${product.image}" alt="${product.title}" class="product-image">
                             <h3>${product.title}</h3>
                             <p>${product.price}$</p>`
+                            <h3>${product.title}</h3>`
                     ;
                 productsSection.appendChild(productElement);
             });
         })
         .catch(error => console.error(`Error fetching products for category "${category}":`, error));
 }
-
+    
 });
