@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function addToCart(product) {
         // Código para agregar al carrito...
     }
-
+ 
     closeButton.addEventListener('click', closeModal);
 
     window.addEventListener('click', function (event) {
