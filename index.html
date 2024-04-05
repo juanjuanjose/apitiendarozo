@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tienda online</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-div">
+            <h1>Tienda online</h1>
+
+            <div class="contenedor-v">
+                <input type="checkbox" id="check">
+                <label for="check" class="icons">
+                    <i class="fa fa-bars" id="menu-icon"></i>
+                    <i class="fa fa-times" id="close-icon"></i>
+                </label>
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" class="input-buscador" placeholder="Buscar productos....">
+                <div class="users">
+                    <i class="usuario"><img src="imagenes/usuario.png" alt=""></i>
+                </div>
+                <div class="shopping-cart">
+                    <i class="carrito" aria-hidden="true"><img src="imagenes/carrito.png" alt=""></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="linea">
+            <div>
+                <div class="caja"></div>
+                <div class="caja"></div>
+            </div>
+            <div class="">
+                <div class="caja"></div>
+                <div class="caja"></div>
+            </div>
+        </div>
+        <div class="tiendaimagen">
+            <img src="imagenes/marco.png" alt="">
+            <h1>Mi Tienda</h1>
+            <img src="imagenes/marco.png" alt="">
+            <div class="linea">
+        </div>
+            <div>
+                <div class="caja"></div>
+                <div class="caja"></div>
+            </div>
+            <div>
+                <div class="caja"></div>
+                <div class="caja"></div>
+            </div>
+        </div>
+        
+        <div id="product-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button"></span>
+                <h2 id="modal-title"></h2>
+                <img id="modal-image" src="" alt="">
+                <p id="modal-description"></p>
+                <p id="modal-category"></p>
+                <p id="modal-price"></p>
+                <button id="add-to-cart">Agregar al carrito</button>
+            </div>
+        </div>
+
+        
+        <nav id="categories-nav">
+
+        </nav>
+    </header>
+    <main>
+        <section id="products-section">
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-linea">
+
+        </div>
+        <ul class="footer-nav">
+            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
