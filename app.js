@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.style.display = 'block';
     }
 
-    function closeModal() {
-        modal.style.display = 'none';
+    function addToCart(product) {
+        // Código para agregar al carrito...
     }
 
     closeButton.addEventListener('click', closeModal);
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (category !== 'all') {
             apiUrl += `/category/${category}`;
         }
-        
+
         fetch(apiUrl)
             .then(response => response.json())
             .then(products => {
@@ -68,11 +68,15 @@ document.addEventListener('DOMContentLoaded', function () {
                         <h3>${product.title}</h3>
                     `;
                     productElement.addEventListener('click', () => {
-                        openModal(product);
+                        openModal(product); // Aquí se pasa la información completa del producto al modal
                     });
                     productsSection.appendChild(productElement);
                 });
             })
             .catch(error => console.error(`Error fetching products for category "${category}":`, error));
+    }
+
+    function closeModal() {
+        modal.style.display = 'none';
     }
 });

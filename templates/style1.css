@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #46a6ea;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.carrito {
+    background-color: #86c4f3;
+    border: 1px solid #f16d1c;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.carrito img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    border: 2px solid #1e8ad9;
+}
+
+h3 {
+    color: #1e8ad9;
+    background-color: #86c4f3;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    color: #1e8ad9;
+    background-color: #86c4f3;
+}
+
+.carrito ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.carrito ul li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.carrito input[type="number"] {
+    background-color: #86c4f3;
+    border-radius: 10px;
+    color: #1e8ad9;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    margin: 20px;
+}
+
+.carrito button {
+    background-color: #86c4f3;
+    color: #dd5908;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.carrito button:hover {
+    background-color: #1e8ad9;
+}

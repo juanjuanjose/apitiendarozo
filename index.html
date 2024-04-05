@@ -9,7 +9,6 @@
 <body>
     <header>
         <div class="contenedor-div">
-            <h1>Tienda online</h1>
 
             <div class="contenedor-v">
                 <input type="checkbox" id="check">
@@ -25,36 +24,21 @@
                     <i class="usuario"><img src="imagenes/usuario.png" alt=""></i>
                 </div>
                 <div class="shopping-cart">
-                    <i class="carrito" aria-hidden="true"><img src="imagenes/carrito.png" alt=""></i>
+                    <a href="templates/carritoCompra.html"></a>
+                        <a href="templates/carritoCompra.html">
+                        <i class="carrito" aria-hidden="true"><img src="imagenes/carrito.png" alt=""></i>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="linea">
-            <div>
-                <div class="caja"></div>
-                <div class="caja"></div>
-            </div>
-            <div class="">
-                <div class="caja"></div>
-                <div class="caja"></div>
-            </div>
-        </div>
+       
         <div class="tiendaimagen">
             <img src="imagenes/marco.png" alt="">
             <h1>Mi Tienda</h1>
             <img src="imagenes/marco.png" alt="">
             <div class="linea">
-        </div>
-            <div>
-                <div class="caja"></div>
-                <div class="caja"></div>
-            </div>
-            <div>
-                <div class="caja"></div>
-                <div class="caja"></div>
-            </div>
-        </div>
+        
         
         <div id="product-modal" class="modal">
             <div class="modal-content">
@@ -64,7 +48,8 @@
                 <p id="modal-description"></p>
                 <p id="modal-category"></p>
                 <p id="modal-price"></p>
-                <button id="add-to-cart">Agregar al carrito</button>
+                <button class="add-to-cart-button" data-producto='{"title": "Nombre del producto", "image": "url_de_la_imagen", "description": "Descripción del producto", "category": "Categoría del producto", "price": 10.99}'>Añadir al carrito de compras</button>
+
             </div>
         </div>
 
@@ -82,9 +67,9 @@
 
         </div>
         <ul class="footer-nav">
-            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-facebook-f"></i></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="imagenes/whatsapp.png"><i ></i></a></li>
+            <li><a href="imagenes/facebook.png"><i ></i></i></a></li>
+            <li><a href="imagenes/instagram.png"><i ></i></a></li>
         </ul>
     </footer>
     <script src="app.js"></script>
